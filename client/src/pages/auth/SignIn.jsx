@@ -14,7 +14,7 @@ export default function SignIn() {
     e.preventDefault()
     const user = { email, password }
     if(email && password !== ""){
-      fetch("http://localhost:5000/auth/login", {
+      fetch("https://socialapp-sn6z.onrender.com/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(user),
